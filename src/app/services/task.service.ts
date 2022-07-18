@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable} from 'rxjs';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Task } from 'src/app/Task';
 import { TASK } from '../mock-tasks';
 
@@ -6,10 +8,11 @@ import { TASK } from '../mock-tasks';
   providedIn: 'root'
 })
 export class TaskService {
+  private apiUrl = 'http://localhost:5000/tasks'
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
-  getTask(): Task[]{
-    return TASK;
+  getTask(): Observable<Task[]>{
+    return this.http.get<Task[]>(this.apiUrl);
   }
 }
