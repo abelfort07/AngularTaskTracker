@@ -1,22 +1,28 @@
 {
-    "tasks" : [
-        {
-            "id": 1,
-            "text": "Appointment with the doctor",
-            "day": "30 March at 2h 30 PM",
-            "reminder": true
-          },
-          {
-            "id": 2,
-            "text": "Brainstorming with other Developers",
-            "day": "30 March at 4h 30 PM",
-            "reminder": true
-          },
-          {
-            "text": "Reading a PD Book",
-            "day": "Today at 9h PM",
-            "reminder": false,
-            "id": 3
-          }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Appointment with the doctor",
+      "day": "30 March at 2h 30 PM",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Brainstorming with other Developers",
+      "day": "30 March at 4h 30 PM",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Reading a PD Book",
+      "day": "Today at 9h PM",
+      "reminder": true
+    },
+    {
+      "text": "Having sex with my Girlfriend ",
+      "day": "Today at 10h PM",
+      "reminder": true,
+      "id": 4
+    }
+  ]
 }
